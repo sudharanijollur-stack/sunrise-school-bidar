@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunrise Public School - Bidar</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#fff;color:#111;overflow-x:hidden}
+nav{padding:15px 40px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid #eee;z-index:100}
+.nav-btn{background:#111;color:#fff;padding:8px 18px;border-radius:20px;text-decoration:none;font-size:13px}
+.hero{padding:60px 40px;display:flex;gap:40px;align-items:center;flex-wrap:wrap;background:linear-gradient(180deg,#fff 0%,#f8fff9 100%)}
+.hero-text{flex:1;min-width:320px}
+.badge{background:#e6ffef;color:#16a34a;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;display:inline-block;margin-bottom:15px}
+.hero h1{font-size:54px;line-height:0.95;font-weight:800}
+.green{color:#25D366}
+.hero p{color:#666;margin:15px 0 25px;max-width:440px;font-size:15px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{background:#25D366;color:#fff;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:700;transition:0.3s;display:inline-block}
+.btn2{border:1px solid #ddd;padding:14px 26px;border-radius:30px;cursor:pointer;font-weight:600;background:#fff}
+.hero-img{flex:1;min-width:320px}
+.hero-img img{width:100%;height:420px;object-fit:cover;border-radius:24px}
+.stats{display:flex;gap:30px;margin-top:30px}
+.stats h3{font-size:28px}
+.stats p{font-size:12px;color:#888}
+.trust{margin:20px 40px;background:#111;color:#fff;padding:14px;text-align:center;border-radius:12px;font-size:13px}
+.features{padding:70px 40px;text-align:center;background:#fcfcfc}
+.cards{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.box{border:1px solid #eee;padding:30px;border-radius:20px;width:300px;text-align:left;transition:0.4s;background:#fff}
+.box span{font-size:32px}
+footer{padding:20px;text-align:center;font-size:12px;color:#777;background:#000}
+@media(max-width:768px){.hero h1{font-size:36px}.hero{padding:40px 20px}nav{padding:12px 20px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <b>SUNRISE PUBLIC SCHOOL</b>
+  <div><span id="typing" style="font-size:12px; font-weight:700; margin-right:10px;"></span> <a class="nav-btn" href="https://wa.me/919999999999">Enquiry</a></div>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <div class="badge">Welcome to New Session 2026-27</div>
+    <h1>Bidar's Most <br><span class="green">Loved School</span></h1>
+    <p>200+ parents ka bharosa. Smart Classes, Safe Transport, Big Playground.</p>
+    <div class="btns">
+      <a class="btn" href="https://wa.me/919999999999">📱 WhatsApp pe Baat Karo</a>
+      <a class="btn2" onclick="document.getElementById('tour').scrollIntoView({behavior:'smooth'})">Campus Dekho</a>
+    </div>
+    <div class="stats">
+      <div><h3 class="count" data-target="200">0</h3><p>Happy Parents</p></div>
+      <div><h3 class="count" data-target="15">0</h3><p>Expert Teachers</p></div>
+      <div><h3 class="count" data-target="100">0</h3><p>% Safe</p></div>
+    </div>
+  </div>
+  <div class="hero-img"><img id="slider" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800"></div>
+</section>
+
+<div class="trust">✅ Managed by <b>Dr. [Sir Name]</b> | Amlapur, Bidar</div>
+
+<section class="features" id="tour">
+  <h2>Why Parents Trust Us</h2>
+  <div class="cards">
+    <div class="box"><span>📚</span><h3>Smart Classes</h3><p>Digital board pe cartoon se padhai.</p></div>
+    <div class="box"><span>🚌</span><h3>GPS Transport</h3><p>Live location mummy ke phone pe.</p></div>
+    <div class="box"><span>⚽</span><h3>Play & Learn</h3><p>Big ground + activities.</p></div>
+  </div>
+</section>
+
+<!-- ADDRESS + MAP + CONTACT -->
+<section style="padding:60px 40px; background:#fff;">
+  <div style="max-width:1100px; margin:auto; display:flex; gap:40px; flex-wrap:wrap;">
+    <div style="flex:1; min-width:300px;">
+      <h2 style="font-size:32px; font-weight:800;">Visit Our Campus</h2>
+      <div style="background:#f9fafb; padding:20px; border-radius:16px; border:1px solid #eee; margin-top:15px;">
+        <p style="margin-bottom:12px;"><b>📍 Address:</b><br>Sunrise Public School,<br><b>Amlapur, Bidar,</b><br>Karnataka - 585401</p>
+        <p style="margin-bottom:12px;"><b>📞 Phone:</b> +91 99999 99999</p>
+        <p><b>✉️ Email:</b> sunrisebidar@gmail.com</p>
+      </div>
+    </div>
+    <div style="flex:1; min-width:320px;">
+      <iframe src="https://www.google.com/maps?q=Amlapur,Bidar,Karnataka&z=15&output=embed" width="100%" height="320" style="border:0; border-radius:20px;" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Made by Sudharani |
+  <a href="https://sudharanijollur-stack.github.io/Portfolio/" target="_blank" style="color:#25D366; text-decoration:none; font-weight:700;"> My Portfolio - Click Here →</a>
+</footer>
+
+<script>
+// Simple typing + counter + slider
+let i=0; const t="SUNRISE - AMLAPUR BIDAR";
+(function type(){ if(i<t.length){document.getElementById('typing').innerHTML+=t.charAt(i++); setTimeout(type,80);} })();
+const counters=document.querySelectorAll('.count');
+const ob=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){let c=e.target, tg=+c.dataset.target, ct=0; const u=()=>{if(ct<tg){ct+=Math.ceil(tg/50); c.innerText=ct+'+'; setTimeout(u,30)}else{c.innerText=tg+'+'}}; u(); ob.unobserve(c)}})});
+counters.forEach(c=>ob.observe(c));
+const imgs=["https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800","https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?w=800","https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800"]; let idx=0;
+setInterval(()=>{idx=(idx+1)%imgs.length; document.getElementById('slider').src=imgs[idx]},3000);
+</script>
+</body>
+</html>
